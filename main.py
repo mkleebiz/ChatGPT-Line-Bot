@@ -11,6 +11,9 @@ from linebot.models import (
 )
 import os
 import uuid
+import openai
+
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 from src.models import OpenAIModel
 from src.memory import Memory
